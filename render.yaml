@@ -1,10 +1,14 @@
+# ExpansionIQ API — Render Blueprint (no secrets inline).
+# Set DATABASE_URL, GEMINI_API_KEY, and CORS_ORIGINS in the Render dashboard.
 services:
   - type: web
     name: expansioniq-api
     runtime: python
     rootDir: backend
+    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /
     envVars:
       - key: DATABASE_URL
         sync: false

@@ -40,14 +40,14 @@ export default function FinancialsPage() {
 
   if (error && !data) {
     return (
-      <ModuleShell title="Financial Forecasting">
+      <ModuleShell eyebrow="Model · Bottoms-up + NPV/IRR" title="Financial Forecasting">
         <EmptyError message={error} />
       </ModuleShell>
     );
   }
   if (!data) {
     return (
-      <ModuleShell title="Financial Forecasting">
+      <ModuleShell eyebrow="Model · Bottoms-up + NPV/IRR" title="Financial Forecasting">
         <LoadingGrid />
       </ModuleShell>
     );

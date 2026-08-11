@@ -16,6 +16,7 @@ export default function RecommendationPage() {
 
   function load() {
     setBusy(true);
+    setError(null);
     api
       .recommendation()
       .then(setData)
@@ -29,14 +30,14 @@ export default function RecommendationPage() {
 
   if (error && !data) {
     return (
-      <ModuleShell title="AI Recommendation Engine">
+      <ModuleShell eyebrow="Synthesis · Cross-module" title="AI Recommendation Engine">
         <EmptyError message={error} />
       </ModuleShell>
     );
   }
   if (!data) {
     return (
-      <ModuleShell title="AI Recommendation Engine">
+      <ModuleShell eyebrow="Synthesis · Cross-module" title="AI Recommendation Engine">
         <LoadingGrid />
       </ModuleShell>
     );

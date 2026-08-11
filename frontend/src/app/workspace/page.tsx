@@ -22,9 +22,12 @@ export default function DashboardPage() {
       .catch((e: Error) => setError(e.message));
   }, []);
 
-  if (error) {
+  if (error && !data) {
     return (
-      <ModuleShell title="Executive Dashboard" description="Aggregated expansion case view">
+      <ModuleShell
+        eyebrow="Case study · Harborstack → Germany"
+        title="Executive Dashboard"
+      >
         <EmptyError message={error} />
       </ModuleShell>
     );
@@ -32,7 +35,10 @@ export default function DashboardPage() {
 
   if (!data) {
     return (
-      <ModuleShell title="Executive Dashboard" description="Loading Harborstack case…">
+      <ModuleShell
+        eyebrow="Case study · Harborstack → Germany"
+        title="Executive Dashboard"
+      >
         <LoadingGrid count={8} />
       </ModuleShell>
     );

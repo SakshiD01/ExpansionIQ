@@ -64,7 +64,7 @@ export default function MarketPage() {
 
   if (error && !data) {
     return (
-      <ModuleShell title="Market Scoring Engine" description="CAGE + PESTEL">
+      <ModuleShell eyebrow="Framework · CAGE + PESTEL" title="Market Scoring Engine">
         <EmptyError message={error} />
       </ModuleShell>
     );
@@ -72,7 +72,7 @@ export default function MarketPage() {
 
   if (!data) {
     return (
-      <ModuleShell title="Market Scoring Engine">
+      <ModuleShell eyebrow="Framework · CAGE + PESTEL" title="Market Scoring Engine">
         <LoadingGrid />
       </ModuleShell>
     );
