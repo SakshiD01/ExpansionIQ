@@ -18,16 +18,16 @@ export default function StakeholdersPage() {
     api.stakeholders().then(setData).catch((e: Error) => setError(e.message));
   }, []);
 
-  if (error) {
+  if (error && !data) {
     return (
-      <ModuleShell title="Stakeholder Management">
+      <ModuleShell eyebrow="Framework · Mendelow's Matrix" title="Stakeholder Management">
         <EmptyError message={error} />
       </ModuleShell>
     );
   }
   if (!data) {
     return (
-      <ModuleShell title="Stakeholder Management">
+      <ModuleShell eyebrow="Framework · Mendelow's Matrix" title="Stakeholder Management">
         <LoadingGrid />
       </ModuleShell>
     );

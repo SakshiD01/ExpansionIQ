@@ -27,16 +27,16 @@ export default function RequirementsPage() {
     return data.items.filter((i) => (filter === "all" ? true : i.type === filter));
   }, [data, filter]);
 
-  if (error) {
+  if (error && !data) {
     return (
-      <ModuleShell title="Requirement Management">
+      <ModuleShell eyebrow="Framework · MoSCoW + RTM" title="Requirement Management">
         <EmptyError message={error} />
       </ModuleShell>
     );
   }
   if (!data) {
     return (
-      <ModuleShell title="Requirement Management">
+      <ModuleShell eyebrow="Framework · MoSCoW + RTM" title="Requirement Management">
         <LoadingGrid />
       </ModuleShell>
     );

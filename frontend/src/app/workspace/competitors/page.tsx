@@ -25,16 +25,16 @@ export default function CompetitorsPage() {
       .catch((e: Error) => setError(e.message));
   }, []);
 
-  if (error) {
+  if (error && !data) {
     return (
-      <ModuleShell title="Competitor Analysis">
+      <ModuleShell eyebrow="Framework · Porter's Five Forces" title="Competitor Analysis">
         <EmptyError message={error} />
       </ModuleShell>
     );
   }
   if (!data) {
     return (
-      <ModuleShell title="Competitor Analysis">
+      <ModuleShell eyebrow="Framework · Porter's Five Forces" title="Competitor Analysis">
         <LoadingGrid />
       </ModuleShell>
     );

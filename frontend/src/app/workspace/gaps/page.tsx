@@ -29,16 +29,16 @@ export default function GapsPage() {
     api.gaps().then(setData).catch((e: Error) => setError(e.message));
   }, []);
 
-  if (error) {
+  if (error && !data) {
     return (
-      <ModuleShell title="Gap Analysis">
+      <ModuleShell eyebrow="Framework · McKinsey 7S" title="Gap Analysis">
         <EmptyError message={error} />
       </ModuleShell>
     );
   }
   if (!data) {
     return (
-      <ModuleShell title="Gap Analysis">
+      <ModuleShell eyebrow="Framework · McKinsey 7S" title="Gap Analysis">
         <LoadingGrid />
       </ModuleShell>
     );

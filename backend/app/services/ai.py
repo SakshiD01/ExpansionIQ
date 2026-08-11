@@ -74,7 +74,7 @@ def _rule_based_recommendation(signals: dict[str, Any]) -> dict[str, Any]:
     # score currently sum of weighted 0-100 components
     confidence = round(min(100, max(0, score)), 1)
 
-    if confidence >= 58 and npv > 0 and market >= 70:
+    if confidence >= 58 and market >= 70 and npv > 0:
         verdict = "GO — Conditional"
         headline = (
             "Proceed with a Germany-first entry under staged capital gates: "

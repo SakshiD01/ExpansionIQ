@@ -43,16 +43,16 @@ export default function RisksPage() {
     return cells;
   }, [data, mode]);
 
-  if (error) {
+  if (error && !data) {
     return (
-      <ModuleShell title="Risk Analysis">
+      <ModuleShell eyebrow="Framework · PMBOK probability–impact" title="Risk Analysis">
         <EmptyError message={error} />
       </ModuleShell>
     );
   }
   if (!data) {
     return (
-      <ModuleShell title="Risk Analysis">
+      <ModuleShell eyebrow="Framework · PMBOK probability–impact" title="Risk Analysis">
         <LoadingGrid />
       </ModuleShell>
     );

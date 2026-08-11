@@ -83,16 +83,16 @@ export default function ProcessesPage() {
     api.processes().then(setData).catch((e: Error) => setError(e.message));
   }, []);
 
-  if (error) {
+  if (error && !data) {
     return (
-      <ModuleShell title="Process Mapping">
+      <ModuleShell eyebrow="Framework · BPMN-style" title="Process Mapping">
         <EmptyError message={error} />
       </ModuleShell>
     );
   }
   if (!data) {
     return (
-      <ModuleShell title="Process Mapping">
+      <ModuleShell eyebrow="Framework · BPMN-style" title="Process Mapping">
         <LoadingGrid />
       </ModuleShell>
     );
