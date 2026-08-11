@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import {
   EmptyError,
   LoadingGrid,
-  MetricCard,
   ModuleShell,
 } from "@/components/layout/ModuleShell";
 import { api, RecommendationPayload } from "@/lib/api";
