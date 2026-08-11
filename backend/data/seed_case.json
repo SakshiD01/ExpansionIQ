@@ -1,0 +1,1257 @@
+{
+  "caseStudy": {
+    "id": "harborstack-de-2026",
+    "company": {
+      "name": "Harborstack",
+      "legalName": "Harborstack Analytics Ltd",
+      "hq": "Dublin, Ireland",
+      "founded": 2018,
+      "employees": 180,
+      "arrEur": 28000000,
+      "stage": "Series B",
+      "product": "Inventory & order intelligence platform for mid-market retail",
+      "homeMarket": "Ireland / UK",
+      "website": "https://harborstack.example"
+    },
+    "targetMarket": {
+      "country": "Germany",
+      "region": "DACH",
+      "currency": "EUR",
+      "language": "German / English",
+      "entryYear": 2026,
+      "rationale": "Germany is Europe's largest retail market with strong mid-market digitization demand and GDPR-aligned compliance posture that maps cleanly to Harborstack's existing EU data architecture."
+    },
+    "businessObjectives": [
+      {
+        "id": "obj-1",
+        "title": "Establish German market beachhead",
+        "description": "Acquire 40 mid-market German retail logos within 24 months of launch."
+      },
+      {
+        "id": "obj-2",
+        "title": "Localise product for DE retail ops",
+        "description": "Ship German UI, DATEV/ERP connectors, and SEPA-native billing by month 9."
+      },
+      {
+        "id": "obj-3",
+        "title": "Achieve positive contribution margin",
+        "description": "Reach break-even on German P&L within 30 months at base-case penetration."
+      },
+      {
+        "id": "obj-4",
+        "title": "Build trusted local brand",
+        "description": "Secure two industry analyst mentions and three reference customers in DE by month 18."
+      },
+      {
+        "id": "obj-5",
+        "title": "Regulatory readiness",
+        "description": "Complete GDPR DPIA, data residency options in Frankfurt, and works-council playbook before first enterprise close."
+      },
+      {
+        "id": "obj-6",
+        "title": "DACH platform for expansion",
+        "description": "Use Germany as the operating template for Austria and Switzerland entry in year 3."
+      }
+    ]
+  },
+  "marketScoring": {
+    "dimensions": [
+      {
+        "id": "cage-cultural",
+        "framework": "CAGE",
+        "name": "Cultural Distance",
+        "score": 72,
+        "weight": 0.1,
+        "justification": "Business culture is formal and consensus-driven vs Irish informality, but English is widely used in B2B tech and retail digital teams."
+      },
+      {
+        "id": "cage-admin",
+        "framework": "CAGE",
+        "name": "Administrative Distance",
+        "score": 78,
+        "weight": 0.12,
+        "justification": "Both EU members; company law and GDPR align. Works councils and GmbH setup add friction but are well-documented."
+      },
+      {
+        "id": "cage-geo",
+        "framework": "CAGE",
+        "name": "Geographic Distance",
+        "score": 85,
+        "weight": 0.08,
+        "justification": "2-hour Dublin\u2013Frankfurt flights; same time zone; easy executive coverage from HQ."
+      },
+      {
+        "id": "cage-econ",
+        "framework": "CAGE",
+        "name": "Economic Distance",
+        "score": 80,
+        "weight": 0.12,
+        "justification": "Comparable purchasing power in mid-market retail SaaS; German ARPA expected within 10% of UK/IE."
+      },
+      {
+        "id": "pestel-political",
+        "framework": "PESTEL",
+        "name": "Political",
+        "score": 82,
+        "weight": 0.1,
+        "justification": "Stable federal system; digitalisation subsidies (Digital Jetzt successors) support SME tech adoption."
+      },
+      {
+        "id": "pestel-economic",
+        "framework": "PESTEL",
+        "name": "Economic",
+        "score": 68,
+        "weight": 0.14,
+        "justification": "Retail soft landing and cautious CapEx, but inventory optimisation ROI narrative remains strong in a margin-tight environment."
+      },
+      {
+        "id": "pestel-social",
+        "framework": "PESTEL",
+        "name": "Social",
+        "score": 74,
+        "weight": 0.08,
+        "justification": "High expectation for data privacy and quality; German buyers value depth over flashy UX."
+      },
+      {
+        "id": "pestel-tech",
+        "framework": "PESTEL",
+        "name": "Technological",
+        "score": 76,
+        "weight": 0.1,
+        "justification": "ERP landscape dominated by SAP/Microsoft; API maturity improving; cloud adoption accelerating in mid-market."
+      },
+      {
+        "id": "pestel-env",
+        "framework": "PESTEL",
+        "name": "Environmental",
+        "score": 70,
+        "weight": 0.06,
+        "justification": "Supply-chain sustainability reporting creates adjacent demand for inventory transparency."
+      },
+      {
+        "id": "pestel-legal",
+        "framework": "PESTEL",
+        "name": "Legal",
+        "score": 65,
+        "weight": 0.1,
+        "justification": "GDPR plus sectoral rules and strong works-council consultation rights lengthen enterprise sales cycles."
+      }
+    ],
+    "defaultWeights": {
+      "cage-cultural": 0.1,
+      "cage-admin": 0.12,
+      "cage-geo": 0.08,
+      "cage-econ": 0.12,
+      "pestel-political": 0.1,
+      "pestel-economic": 0.14,
+      "pestel-social": 0.08,
+      "pestel-tech": 0.1,
+      "pestel-env": 0.06,
+      "pestel-legal": 0.1
+    },
+    "narrative": "Germany scores as a strong but disciplined expansion market for Harborstack: low geographic and administrative distance within the EU, solid technological fit with SAP-centric retail, and clear product\u2013problem match around inventory efficiency. Soft retail CapEx and works-council/legal friction pull the composite below a slam-dunk threshold, pointing to a measured Germany-first DACH entry rather than a land-grab."
+  },
+  "competitors": {
+    "fiveForces": [
+      {
+        "force": "Threat of new entrants",
+        "score": 3,
+        "justification": "Moderate \u2014 cloud lowers infra barriers, but retail domain expertise and ERP connectors create a moat."
+      },
+      {
+        "force": "Supplier power",
+        "score": 2,
+        "justification": "Low \u2014 cloud infra and data providers are interchangeable; primary lock-in is customer ERP relationships."
+      },
+      {
+        "force": "Buyer power",
+        "score": 4,
+        "justification": "High \u2014 mid-market retailers run structured RFPs, demand proofs of concept, and negotiate multi-year discounts."
+      },
+      {
+        "force": "Threat of substitutes",
+        "score": 3,
+        "justification": "Moderate \u2014 in-house BI teams and ERP native analytics compete on 'good enough' for simpler use cases."
+      },
+      {
+        "force": "Competitive rivalry",
+        "score": 4,
+        "justification": "High \u2014 Blue Yonder, RELEX, and local specialists compete aggressively on German retail logos."
+      }
+    ],
+    "positioningAxes": {
+      "x": "Price Position",
+      "y": "Local Market Depth"
+    },
+    "competitors": [
+      {
+        "id": "harborstack",
+        "name": "Harborstack",
+        "x": 55,
+        "y": 25,
+        "isSelf": true,
+        "swot": {
+          "strengths": [
+            "Modern cloud UX",
+            "Strong IE/UK reference base",
+            "Fast implementation"
+          ],
+          "weaknesses": [
+            "No DE references yet",
+            "Limited German support hours",
+            "Thin SAP connector depth"
+          ],
+          "opportunities": [
+            "Mid-market white space under Blue Yonder",
+            "Sustainability reporting adjacency"
+          ],
+          "threats": [
+            "RELEX price pressure",
+            "Long DE sales cycles"
+          ]
+        }
+      },
+      {
+        "id": "relex",
+        "name": "RELEX Solutions",
+        "x": 70,
+        "y": 85,
+        "isSelf": false,
+        "swot": {
+          "strengths": [
+            "Deep retail science",
+            "Strong DACH presence"
+          ],
+          "weaknesses": [
+            "Premium pricing",
+            "Heavier implementations"
+          ],
+          "opportunities": [
+            "Enterprise upsell"
+          ],
+          "threats": [
+            "Mid-market specialists"
+          ]
+        }
+      },
+      {
+        "id": "blueyonder",
+        "name": "Blue Yonder",
+        "x": 80,
+        "y": 90,
+        "isSelf": false,
+        "swot": {
+          "strengths": [
+            "End-to-end supply chain suite",
+            "Brand trust"
+          ],
+          "weaknesses": [
+            "Complex stacks",
+            "Slow for mid-market"
+          ],
+          "opportunities": [
+            "AI narrative"
+          ],
+          "threats": [
+            "Best-of-breed challengers"
+          ]
+        }
+      },
+      {
+        "id": "toolsfactory",
+        "name": "ToolsGroup",
+        "x": 65,
+        "y": 70,
+        "isSelf": false,
+        "swot": {
+          "strengths": [
+            "Demand planning pedigree"
+          ],
+          "weaknesses": [
+            "Legacy perception"
+          ],
+          "opportunities": [
+            "Cloud migration wave"
+          ],
+          "threats": [
+            "Pure-play inventory SaaS"
+          ]
+        }
+      },
+      {
+        "id": "lokad",
+        "name": "Lokad",
+        "x": 45,
+        "y": 40,
+        "isSelf": false,
+        "swot": {
+          "strengths": [
+            "Quantitative forecasting culture"
+          ],
+          "weaknesses": [
+            "Niche positioning"
+          ],
+          "opportunities": [
+            "Tech-forward retailers"
+          ],
+          "threats": [
+            "Platform breadth gaps"
+          ]
+        }
+      },
+      {
+        "id": "synactive",
+        "name": "Synergetic Retail (local)",
+        "x": 50,
+        "y": 75,
+        "isSelf": false,
+        "swot": {
+          "strengths": [
+            "German language & works-council fluency"
+          ],
+          "weaknesses": [
+            "Limited product depth"
+          ],
+          "opportunities": [
+            "Partner channel"
+          ],
+          "threats": [
+            "International platforms entering"
+          ]
+        }
+      }
+    ]
+  },
+  "stakeholders": {
+    "register": [
+      {
+        "id": "st-1",
+        "name": "Aoife Brennan",
+        "role": "CEO",
+        "organization": "Harborstack",
+        "influence": 10,
+        "interest": 9,
+        "category": "Internal Executive"
+      },
+      {
+        "id": "st-2",
+        "name": "Marcus Keller",
+        "role": "VP Sales EMEA",
+        "organization": "Harborstack",
+        "influence": 8,
+        "interest": 10,
+        "category": "Internal Operator"
+      },
+      {
+        "id": "st-3",
+        "name": "Priya Shah",
+        "role": "CFO",
+        "organization": "Harborstack",
+        "influence": 9,
+        "interest": 7,
+        "category": "Internal Executive"
+      },
+      {
+        "id": "st-4",
+        "name": "Lukas Weber",
+        "role": "Country Manager DE (hire)",
+        "organization": "Harborstack DE",
+        "influence": 7,
+        "interest": 10,
+        "category": "Internal Operator"
+      },
+      {
+        "id": "st-5",
+        "name": "Helena Vogt",
+        "role": "Board Observer",
+        "organization": "Northwind Capital",
+        "influence": 8,
+        "interest": 6,
+        "category": "Investor"
+      },
+      {
+        "id": "st-6",
+        "name": "Dr. Anja Richter",
+        "role": "Data Protection Officer",
+        "organization": "Harborstack",
+        "influence": 6,
+        "interest": 8,
+        "category": "Compliance"
+      },
+      {
+        "id": "st-7",
+        "name": "Tom\u00e1s O'Neill",
+        "role": "Head of Product",
+        "organization": "Harborstack",
+        "influence": 7,
+        "interest": 9,
+        "category": "Internal Operator"
+      },
+      {
+        "id": "st-8",
+        "name": "Greta Hoffmann",
+        "role": "Procurement Lead",
+        "organization": "Sample Retail AG (pilot)",
+        "influence": 5,
+        "interest": 7,
+        "category": "Customer"
+      }
+    ],
+    "raci": [
+      {
+        "activity": "Market entry decision",
+        "R": "Aoife Brennan",
+        "A": "Board / Northwind",
+        "C": "Priya Shah, Marcus Keller",
+        "I": "All staff"
+      },
+      {
+        "activity": "DE entity & banking setup",
+        "R": "Priya Shah",
+        "A": "Aoife Brennan",
+        "C": "External counsel",
+        "I": "Marcus Keller"
+      },
+      {
+        "activity": "Product localisation",
+        "R": "Tom\u00e1s O'Neill",
+        "A": "Aoife Brennan",
+        "C": "Lukas Weber, Dr. Anja Richter",
+        "I": "Sales EMEA"
+      },
+      {
+        "activity": "Pilot customer acquisition",
+        "R": "Marcus Keller",
+        "A": "Aoife Brennan",
+        "C": "Lukas Weber",
+        "I": "Product, CS"
+      },
+      {
+        "activity": "GDPR / DPIA for DE",
+        "R": "Dr. Anja Richter",
+        "A": "Aoife Brennan",
+        "C": "Product, Legal",
+        "I": "Sales"
+      },
+      {
+        "activity": "Hiring DE GTM team",
+        "R": "Lukas Weber",
+        "A": "Marcus Keller",
+        "C": "People Ops",
+        "I": "Finance"
+      }
+    ],
+    "commsPlan": [
+      {
+        "stakeholderId": "st-1",
+        "cadence": "Weekly",
+        "channel": "Executive standup",
+        "messageFocus": "Go/no-go gates, risk heat, capital ask"
+      },
+      {
+        "stakeholderId": "st-2",
+        "cadence": "Twice weekly",
+        "channel": "Pipeline review",
+        "messageFocus": "Pilot pipeline, win themes, competitive intel"
+      },
+      {
+        "stakeholderId": "st-3",
+        "cadence": "Bi-weekly",
+        "channel": "Finance sync",
+        "messageFocus": "Burn, scenario NPV, hiring freeze triggers"
+      },
+      {
+        "stakeholderId": "st-5",
+        "cadence": "Monthly",
+        "channel": "Board pack",
+        "messageFocus": "Milestones vs plan, cash runway impact"
+      },
+      {
+        "stakeholderId": "st-6",
+        "cadence": "Bi-weekly",
+        "channel": "Compliance desk",
+        "messageFocus": "DPIA status, residency, works council"
+      },
+      {
+        "stakeholderId": "st-8",
+        "cadence": "Weekly during pilot",
+        "channel": "Customer success Slack + QBRs",
+        "messageFocus": "Value realisation, integration blockers"
+      }
+    ]
+  },
+  "requirements": {
+    "items": [
+      {
+        "id": "req-1",
+        "type": "functional",
+        "title": "German UI localisation",
+        "description": "Full UI and system emails in German with locale-aware number/date formats.",
+        "priority": "Must",
+        "status": "In Progress",
+        "objectiveId": "obj-2"
+      },
+      {
+        "id": "req-2",
+        "type": "functional",
+        "title": "SAP S/4HANA connector",
+        "description": "Bidirectional inventory & order sync for mid-market SAP deployments.",
+        "priority": "Must",
+        "status": "Planned",
+        "objectiveId": "obj-2"
+      },
+      {
+        "id": "req-3",
+        "type": "functional",
+        "title": "SEPA billing & invoicing",
+        "description": "EUR invoicing, SEPA Direct Debit, and DATEV export for finance teams.",
+        "priority": "Must",
+        "status": "Planned",
+        "objectiveId": "obj-2"
+      },
+      {
+        "id": "req-4",
+        "type": "non-functional",
+        "title": "Frankfurt data residency option",
+        "description": "Customer data pinable to eu-central-1 with documented subprocessors.",
+        "priority": "Must",
+        "status": "In Progress",
+        "objectiveId": "obj-5"
+      },
+      {
+        "id": "req-5",
+        "type": "non-functional",
+        "title": "GDPR DPIA pack",
+        "description": "Reusable DPIA templates and DPA schedules for German enterprise legal.",
+        "priority": "Must",
+        "status": "In Progress",
+        "objectiveId": "obj-5"
+      },
+      {
+        "id": "req-6",
+        "type": "functional",
+        "title": "DE holiday & lead-time calendars",
+        "description": "Regional holiday calendars and carrier lead times for DE fulfilment nodes.",
+        "priority": "Should",
+        "status": "Planned",
+        "objectiveId": "obj-1"
+      },
+      {
+        "id": "req-7",
+        "type": "functional",
+        "title": "Works-council reporting exports",
+        "description": "Read-only workforce impact reports for consultation packages.",
+        "priority": "Should",
+        "status": "Backlog",
+        "objectiveId": "obj-5"
+      },
+      {
+        "id": "req-8",
+        "type": "non-functional",
+        "title": "German-language support SLAs",
+        "description": "L1 support in German business hours (CET) with 4h P1 response.",
+        "priority": "Must",
+        "status": "Planned",
+        "objectiveId": "obj-4"
+      },
+      {
+        "id": "req-9",
+        "type": "functional",
+        "title": "Microsoft Dynamics connector",
+        "description": "Connector for Dynamics 365 Finance used by ~20% of target segment.",
+        "priority": "Should",
+        "status": "Backlog",
+        "objectiveId": "obj-2"
+      },
+      {
+        "id": "req-10",
+        "type": "non-functional",
+        "title": "99.9% uptime with EU status page",
+        "description": "Public status page and contractual uptime for enterprise SKUs.",
+        "priority": "Should",
+        "status": "Done",
+        "objectiveId": "obj-3"
+      },
+      {
+        "id": "req-11",
+        "type": "functional",
+        "title": "Sustainability inventory KPIs",
+        "description": "Optional waste/overstock KPIs for ESG reporting packs.",
+        "priority": "Could",
+        "status": "Backlog",
+        "objectiveId": "obj-4"
+      },
+      {
+        "id": "req-12",
+        "type": "functional",
+        "title": "Offline POS edge sync",
+        "description": "Store-level offline buffer \u2014 deferred post-MVP.",
+        "priority": "Won't",
+        "status": "Deferred",
+        "objectiveId": "obj-1"
+      }
+    ]
+  },
+  "gaps": {
+    "items": [
+      {
+        "id": "gap-1",
+        "area": "Local sales team",
+        "currentState": "EMEA team covers DE remotely from Dublin/London",
+        "futureState": "4-person DE GTM pod (CM + 2 AEs + SE) in Frankfurt",
+        "severity": 4,
+        "mckinsey7s": "Staff",
+        "closingAction": "Hire Country Manager then AE/SE pair Q2\u2013Q3",
+        "estimatedCostEur": 620000,
+        "estimatedMonths": 9
+      },
+      {
+        "id": "gap-2",
+        "area": "Regulatory / legal entity",
+        "currentState": "Irish Ltd only; no DE VAT desk playbook",
+        "futureState": "GmbH or permanent establishment + DE tax advisor",
+        "severity": 3,
+        "mckinsey7s": "Structure",
+        "closingAction": "Engage counsel; incorporate GmbH within 4 months of go",
+        "estimatedCostEur": 85000,
+        "estimatedMonths": 4
+      },
+      {
+        "id": "gap-3",
+        "area": "SAP connector depth",
+        "currentState": "Basic OData read for inventory snapshots",
+        "futureState": "Certified bidirectional S/4 connector with monitoring",
+        "severity": 5,
+        "mckinsey7s": "Systems",
+        "closingAction": "Staff 2 integration engineers + partner for certification",
+        "estimatedCostEur": 410000,
+        "estimatedMonths": 8
+      },
+      {
+        "id": "gap-4",
+        "area": "German localisation",
+        "currentState": "English-only product",
+        "futureState": "DE UI, docs, and in-app help complete",
+        "severity": 3,
+        "mckinsey7s": "Skills",
+        "closingAction": "Vendor localisation + in-house linguistic QA",
+        "estimatedCostEur": 120000,
+        "estimatedMonths": 5
+      },
+      {
+        "id": "gap-5",
+        "area": "Payment infrastructure",
+        "currentState": "GBP/EUR card billing via Stripe IE",
+        "futureState": "SEPA + DATEV-ready invoicing",
+        "severity": 4,
+        "mckinsey7s": "Systems",
+        "closingAction": "Billing overhaul with Stripe SEPA and DATEV export",
+        "estimatedCostEur": 95000,
+        "estimatedMonths": 4
+      },
+      {
+        "id": "gap-6",
+        "area": "Brand & references",
+        "currentState": "Zero German logos",
+        "futureState": "3 published case studies and analyst briefing",
+        "severity": 4,
+        "mckinsey7s": "Shared Values",
+        "closingAction": "Design partner program with discount-for-reference",
+        "estimatedCostEur": 150000,
+        "estimatedMonths": 12
+      },
+      {
+        "id": "gap-7",
+        "area": "Support coverage",
+        "currentState": "IST/GMT support hours",
+        "futureState": "CET L1 coverage with DE contractors",
+        "severity": 3,
+        "mckinsey7s": "Style",
+        "closingAction": "Hire 2 DE-speaking CSMs; extend hours",
+        "estimatedCostEur": 180000,
+        "estimatedMonths": 6
+      },
+      {
+        "id": "gap-8",
+        "area": "Go-to-market motion",
+        "currentState": "Product-led + founder-led enterprise in IE/UK",
+        "futureState": "Field sales + partner ISVs for DE mid-market",
+        "severity": 4,
+        "mckinsey7s": "Strategy",
+        "closingAction": "Build partner brief and 2 SAP boutique alliances",
+        "estimatedCostEur": 200000,
+        "estimatedMonths": 10
+      }
+    ],
+    "sevenS": [
+      {
+        "element": "Strategy",
+        "currentScore": 55,
+        "targetScore": 85,
+        "notes": "Need explicit Germany-first DACH thesis with kill criteria."
+      },
+      {
+        "element": "Structure",
+        "currentScore": 40,
+        "targetScore": 80,
+        "notes": "No DE entity or country P&L owner yet."
+      },
+      {
+        "element": "Systems",
+        "currentScore": 50,
+        "targetScore": 88,
+        "notes": "SAP/SEPA gaps are the critical path."
+      },
+      {
+        "element": "Shared Values",
+        "currentScore": 70,
+        "targetScore": 80,
+        "notes": "Privacy-first culture already aligns with DE buyers."
+      },
+      {
+        "element": "Skills",
+        "currentScore": 45,
+        "targetScore": 82,
+        "notes": "German language and SAP skills thin."
+      },
+      {
+        "element": "Style",
+        "currentScore": 60,
+        "targetScore": 78,
+        "notes": "Shift from informal Irish GTM to formal enterprise ritual."
+      },
+      {
+        "element": "Staff",
+        "currentScore": 35,
+        "targetScore": 85,
+        "notes": "DE hiring plan is the largest operational bet."
+      }
+    ]
+  },
+  "processes": {
+    "orderToCash": {
+      "asIs": {
+        "nodes": [
+          {
+            "id": "otc-a1",
+            "label": "Lead in CRM",
+            "type": "start",
+            "position": {
+              "x": 0,
+              "y": 80
+            }
+          },
+          {
+            "id": "otc-a2",
+            "label": "Demo & proposal (EN)",
+            "type": "task",
+            "position": {
+              "x": 180,
+              "y": 80
+            }
+          },
+          {
+            "id": "otc-a3",
+            "label": "Stripe checkout (card)",
+            "type": "task",
+            "position": {
+              "x": 360,
+              "y": 80
+            }
+          },
+          {
+            "id": "otc-a4",
+            "label": "Provision tenant (IE region)",
+            "type": "task",
+            "position": {
+              "x": 540,
+              "y": 80
+            }
+          },
+          {
+            "id": "otc-a5",
+            "label": "Invoice PDF emailed",
+            "type": "end",
+            "position": {
+              "x": 720,
+              "y": 80
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "e-a1",
+            "source": "otc-a1",
+            "target": "otc-a2"
+          },
+          {
+            "id": "e-a2",
+            "source": "otc-a2",
+            "target": "otc-a3"
+          },
+          {
+            "id": "e-a3",
+            "source": "otc-a3",
+            "target": "otc-a4"
+          },
+          {
+            "id": "e-a4",
+            "source": "otc-a4",
+            "target": "otc-a5"
+          }
+        ]
+      },
+      "toBe": {
+        "nodes": [
+          {
+            "id": "otc-b1",
+            "label": "Lead in DE CRM",
+            "type": "start",
+            "position": {
+              "x": 0,
+              "y": 40
+            }
+          },
+          {
+            "id": "otc-b2",
+            "label": "Discovery (DE/EN)",
+            "type": "task",
+            "position": {
+              "x": 160,
+              "y": 40
+            }
+          },
+          {
+            "id": "otc-b3",
+            "label": "Security & DPIA review",
+            "type": "task",
+            "position": {
+              "x": 320,
+              "y": 0
+            }
+          },
+          {
+            "id": "otc-b4",
+            "label": "Commercial proposal EUR",
+            "type": "task",
+            "position": {
+              "x": 320,
+              "y": 100
+            }
+          },
+          {
+            "id": "otc-b5",
+            "label": "Legal / works council gate?",
+            "type": "gateway",
+            "position": {
+              "x": 500,
+              "y": 40
+            }
+          },
+          {
+            "id": "otc-b6",
+            "label": "SEPA mandate + DATEV invoice",
+            "type": "task",
+            "position": {
+              "x": 680,
+              "y": 40
+            }
+          },
+          {
+            "id": "otc-b7",
+            "label": "Provision Frankfurt tenant",
+            "type": "task",
+            "position": {
+              "x": 860,
+              "y": 40
+            }
+          },
+          {
+            "id": "otc-b8",
+            "label": "CSM onboarding (CET)",
+            "type": "end",
+            "position": {
+              "x": 1040,
+              "y": 40
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "e-b1",
+            "source": "otc-b1",
+            "target": "otc-b2"
+          },
+          {
+            "id": "e-b2",
+            "source": "otc-b2",
+            "target": "otc-b3"
+          },
+          {
+            "id": "e-b3",
+            "source": "otc-b2",
+            "target": "otc-b4"
+          },
+          {
+            "id": "e-b4",
+            "source": "otc-b3",
+            "target": "otc-b5"
+          },
+          {
+            "id": "e-b5",
+            "source": "otc-b4",
+            "target": "otc-b5"
+          },
+          {
+            "id": "e-b6",
+            "source": "otc-b5",
+            "target": "otc-b6",
+            "label": "Approved"
+          },
+          {
+            "id": "e-b7",
+            "source": "otc-b6",
+            "target": "otc-b7"
+          },
+          {
+            "id": "e-b8",
+            "source": "otc-b7",
+            "target": "otc-b8"
+          }
+        ]
+      }
+    },
+    "regulatoryApproval": {
+      "asIs": {
+        "nodes": [
+          {
+            "id": "reg-a1",
+            "label": "Standard DPA signed",
+            "type": "start",
+            "position": {
+              "x": 0,
+              "y": 80
+            }
+          },
+          {
+            "id": "reg-a2",
+            "label": "Security questionnaire",
+            "type": "task",
+            "position": {
+              "x": 220,
+              "y": 80
+            }
+          },
+          {
+            "id": "reg-a3",
+            "label": "Go-live",
+            "type": "end",
+            "position": {
+              "x": 440,
+              "y": 80
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "re-a1",
+            "source": "reg-a1",
+            "target": "reg-a2"
+          },
+          {
+            "id": "re-a2",
+            "source": "reg-a2",
+            "target": "reg-a3"
+          }
+        ]
+      },
+      "toBe": {
+        "nodes": [
+          {
+            "id": "reg-b1",
+            "label": "DE DPA + SCCs pack",
+            "type": "start",
+            "position": {
+              "x": 0,
+              "y": 60
+            }
+          },
+          {
+            "id": "reg-b2",
+            "label": "DPIA workshop",
+            "type": "task",
+            "position": {
+              "x": 180,
+              "y": 60
+            }
+          },
+          {
+            "id": "reg-b3",
+            "label": "Works council consult?",
+            "type": "gateway",
+            "position": {
+              "x": 360,
+              "y": 60
+            }
+          },
+          {
+            "id": "reg-b4",
+            "label": "Residency config (FRA)",
+            "type": "task",
+            "position": {
+              "x": 540,
+              "y": 20
+            }
+          },
+          {
+            "id": "reg-b5",
+            "label": "Pen-test evidence pack",
+            "type": "task",
+            "position": {
+              "x": 540,
+              "y": 120
+            }
+          },
+          {
+            "id": "reg-b6",
+            "label": "DPO sign-off",
+            "type": "task",
+            "position": {
+              "x": 720,
+              "y": 60
+            }
+          },
+          {
+            "id": "reg-b7",
+            "label": "Approved to onboard",
+            "type": "end",
+            "position": {
+              "x": 900,
+              "y": 60
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "re-b1",
+            "source": "reg-b1",
+            "target": "reg-b2"
+          },
+          {
+            "id": "re-b2",
+            "source": "reg-b2",
+            "target": "reg-b3"
+          },
+          {
+            "id": "re-b3",
+            "source": "reg-b3",
+            "target": "reg-b4",
+            "label": "If needed"
+          },
+          {
+            "id": "re-b4",
+            "source": "reg-b3",
+            "target": "reg-b5"
+          },
+          {
+            "id": "re-b5",
+            "source": "reg-b4",
+            "target": "reg-b6"
+          },
+          {
+            "id": "re-b6",
+            "source": "reg-b5",
+            "target": "reg-b6"
+          },
+          {
+            "id": "re-b7",
+            "source": "reg-b6",
+            "target": "reg-b7"
+          }
+        ]
+      }
+    }
+  },
+  "financials": {
+    "assumptions": {
+      "segmentSize": 4200,
+      "year1Penetration": 0.004,
+      "year5Penetration": 0.028,
+      "arpaEur": 48000,
+      "setupCostEur": 1850000,
+      "annualOpexEur": 2100000,
+      "discountRate": 0.12,
+      "fxRateEurToHome": 1.0,
+      "homeCurrency": "EUR"
+    },
+    "scenarios": {
+      "best": {
+        "penetrationMult": 1.35,
+        "costMult": 0.9,
+        "revenueByYear": [
+          1209600,
+          2822400,
+          4536000,
+          6048000,
+          7560000
+        ],
+        "opexByYear": [
+          1890000,
+          2000000,
+          2150000,
+          2300000,
+          2400000
+        ],
+        "npv": 4120000,
+        "irr": 0.31,
+        "breakEvenMonth": 22
+      },
+      "base": {
+        "penetrationMult": 1.0,
+        "costMult": 1.0,
+        "revenueByYear": [
+          806400,
+          1814400,
+          3024000,
+          4233600,
+          5644800
+        ],
+        "opexByYear": [
+          2100000,
+          2200000,
+          2350000,
+          2500000,
+          2600000
+        ],
+        "npv": 980000,
+        "irr": 0.16,
+        "breakEvenMonth": 28
+      },
+      "worst": {
+        "penetrationMult": 0.65,
+        "costMult": 1.2,
+        "revenueByYear": [
+          403200,
+          967680,
+          1612800,
+          2419200,
+          3225600
+        ],
+        "opexByYear": [
+          2520000,
+          2550000,
+          2600000,
+          2650000,
+          2700000
+        ],
+        "npv": -1450000,
+        "irr": -0.04,
+        "breakEvenMonth": 48
+      }
+    }
+  },
+  "risks": {
+    "items": [
+      {
+        "id": "risk-1",
+        "title": "Extended enterprise sales cycle",
+        "category": "Operational",
+        "probability": 4,
+        "impact": 4,
+        "mitigation": "Pilot-first pricing and executive sponsor program",
+        "residualProbability": 3,
+        "residualImpact": 3
+      },
+      {
+        "id": "risk-2",
+        "title": "SAP connector delays",
+        "category": "Operational",
+        "probability": 3,
+        "impact": 5,
+        "mitigation": "Partner with certified SAP boutique; parallel Dynamics path",
+        "residualProbability": 2,
+        "residualImpact": 4
+      },
+      {
+        "id": "risk-3",
+        "title": "Works council blocking workforce tooling perception",
+        "category": "Regulatory",
+        "probability": 3,
+        "impact": 4,
+        "mitigation": "Position as inventory-only; legal playbook + early consult",
+        "residualProbability": 2,
+        "residualImpact": 3
+      },
+      {
+        "id": "risk-4",
+        "title": "RELEX price war in mid-market",
+        "category": "Competitive",
+        "probability": 3,
+        "impact": 4,
+        "mitigation": "Differentiate on time-to-value and mid-market packaging",
+        "residualProbability": 3,
+        "residualImpact": 3
+      },
+      {
+        "id": "risk-5",
+        "title": "Retail CapEx freeze",
+        "category": "Financial",
+        "probability": 3,
+        "impact": 4,
+        "mitigation": "ROI guarantee pilot; shift to OpEx subscription narrative",
+        "residualProbability": 2,
+        "residualImpact": 3
+      },
+      {
+        "id": "risk-6",
+        "title": "Key hire (Country Manager) miss",
+        "category": "Operational",
+        "probability": 3,
+        "impact": 5,
+        "mitigation": "Retained search + interim contractor from network",
+        "residualProbability": 2,
+        "residualImpact": 4
+      },
+      {
+        "id": "risk-7",
+        "title": "Data residency customer demand spike",
+        "category": "Regulatory",
+        "probability": 2,
+        "impact": 3,
+        "mitigation": "Frankfurt pin already on roadmap; pre-provision capacity",
+        "residualProbability": 1,
+        "residualImpact": 2
+      },
+      {
+        "id": "risk-8",
+        "title": "Brand trust deficit vs incumbents",
+        "category": "Reputational",
+        "probability": 4,
+        "impact": 3,
+        "mitigation": "Design-partner references and analyst briefing",
+        "residualProbability": 3,
+        "residualImpact": 2
+      },
+      {
+        "id": "risk-9",
+        "title": "FX / macro shock (indirect EUR costs)",
+        "category": "Financial",
+        "probability": 2,
+        "impact": 2,
+        "mitigation": "Natural EUR hedge; both revenue and opex in EUR",
+        "residualProbability": 2,
+        "residualImpact": 1
+      },
+      {
+        "id": "risk-10",
+        "title": "Scope creep into WMS",
+        "category": "Operational",
+        "probability": 3,
+        "impact": 3,
+        "mitigation": "Strict MVP boundary in product council",
+        "residualProbability": 2,
+        "residualImpact": 2
+      }
+    ]
+  }
+}

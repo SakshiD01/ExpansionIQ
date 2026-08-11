@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #090a0c;
+  --bg-elev: #101216;
+  --bg-soft: #15181e;
+  --ink: #f2f3f5;
+  --ink-muted: #9aa3b2;
+  --ink-faint: #6b7382;
+  --line: #232833;
+  --accent: #2dd4a8;
+  --accent-soft: rgba(45, 212, 168, 0.12);
+  --accent-ink: #04140f;
+  --warn: #e8b84a;
+  --danger: #f07178;
+  --success: #2dd4a8;
+}
+
+html {
+  color-scheme: dark;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  color: var(--ink);
+  background: var(--bg);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--accent) 35%, transparent);
+  color: var(--ink);
+}
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-panel bg-bg-elev shadow-panel;
+  }
+
+  .panel-soft {
+    @apply rounded-panel border border-line bg-bg-soft;
+  }
+
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-[0.16em] text-ink-faint;
+  }
+
+  .metric {
+    @apply font-mono text-3xl font-medium tracking-tight text-ink tabular-nums;
+  }
+
+  .caption {
+    @apply text-sm text-ink-muted leading-relaxed;
+  }
+
+  .nav-link {
+    @apply flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-ink-muted transition-colors hover:bg-bg-soft hover:text-ink;
+  }
+
+  .nav-link-active {
+    @apply bg-accent-soft text-accent;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-accent-ink transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-line bg-transparent px-4 py-2.5 text-sm font-medium text-ink transition hover:bg-bg-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  }
+
+  .slider {
+    @apply h-1.5 w-full cursor-pointer appearance-none rounded-full bg-bg-soft accent-accent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}

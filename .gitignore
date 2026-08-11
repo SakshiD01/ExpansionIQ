@@ -1,0 +1,14 @@
+.DS_Store
+*.log
+.env
+.env.local
+backend/.venv/
+backend/*.db
+frontend/node_modules/
+frontend/.next/
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+frontend/tsconfig.tsbuildinfo
+frontend/.next/
